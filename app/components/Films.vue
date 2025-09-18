@@ -2,7 +2,6 @@
   import { largest_size_map, getRole } from '~/lib/api';
   const props = defineProps(['films', 'link', 'credits', 'name']);
   const { films, link, credits, name = 'name' } = props;
-  // console.log(films);
 </script>
 
 <template>
