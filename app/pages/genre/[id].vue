@@ -1,10 +1,11 @@
-<script setup lang="ts">
-// const { data: page } = await useFetch('/api/cms/home')
+<script setup lang="js">
+  import { genres } from '~/lib/api';
+  const { params } = useRoute();
+  const { id } = params;
 </script>
 
 <template>
-  <h1>genre</h1>
-  <NuxtLink to="/blog/hello-world">
-    Go to blog post
-  </NuxtLink>
+  <main>
+    <FilmGrid :id="id" :name="genres[id]" />
+  </main>
 </template>

@@ -1,5 +1,5 @@
 <script setup lang="js">
-  import { api } from '~/lib/api';
+  import { api, genres } from '~/lib/api';
   const props = defineProps(['id']);
   const { id } = props;
   const { data } = await useFetch(api.getCategoryPath(id), api.fetch_options);
@@ -7,5 +7,5 @@
 </script>
 
 <template>
-  <Films :films="data.results" name="Category" />
+  <Films :films="data.results" :name="genres[id]" :link="`/genre/${id}`" />
 </template>
