@@ -9,7 +9,7 @@
   <div class="category" v-if="films.length">
 		<div class="category-head">
 			<h2>{{name}}</h2>
-			<a :href="link" v-if="link">view all</a>
+			<NuxtLink :to="link" v-if="link">view all</NuxtLink>
 		</div>
 		<div class="category-items">
 			<NuxtLink :to="`/movie/${film.id}`" class="category-item" v-for="film in films" :key="film.id">
