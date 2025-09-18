@@ -6,6 +6,6 @@
 
 <template>
   <div class="genres">
-    <NuxtLink :to="`/genre/${genre.id}`" v-for="genre in genres">{{genre.name}}</NuxtLink>
+    <NuxtLink :to="`/genre/${genre.id}`" v-for="genre in genres" :key="genre.id">{{genre.name}}</NuxtLink>
   </div>
 </template>

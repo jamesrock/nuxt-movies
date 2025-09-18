@@ -10,7 +10,7 @@
 			<h2>{{name}}</h2>
 		</div>
 		<div class="category-items">
-			<NuxtLink :to="`/person/${person.id}`" class="category-item" v-for="person in people">
+			<NuxtLink :to="`/person/${person.id}`" class="category-item" v-for="person in people" :key="person.id">
 				<Poster :path="person.profile_path" :size="largest_size_map.person" />
 				<div class="desc">
 					<div class="desc-name">{{person.name}}</div>

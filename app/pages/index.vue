@@ -9,6 +9,9 @@
       <Category id="18" />
       <Category id="27" />
       <Category id="878" />
+      <div class="categories-foot">
+        <NuxtLink to="/genre" class="button">View all genres</NuxtLink>
+      </div>
     </div>
   </main>
 </template>

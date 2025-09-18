@@ -12,7 +12,7 @@
 			<a :href="link" v-if="link">view all</a>
 		</div>
 		<div class="category-items">
-			<NuxtLink :to="`/movie/${film.id}`" class="category-item" v-for="film in films">
+			<NuxtLink :to="`/movie/${film.id}`" class="category-item" v-for="film in films" :key="film.id">
 				<Poster :path="film.poster_path" :size="largest_size_map.movie" />
 				<div class="desc">
 					<div class="desc-name">{{film.title}}</div>
