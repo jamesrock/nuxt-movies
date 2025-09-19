@@ -1,4 +1,4 @@
-## next-movies
+## nuxt-movies
 
 [nuxt-movies.jamesrock.me](https://nuxt-movies.jamesrock.me)
 
