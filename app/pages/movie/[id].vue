@@ -3,7 +3,6 @@
   const { params } = useRoute();
   const { id } = params;
   const { data: film } = await useFetch(api.getFilmPath(id), api.fetch_options);
-  // console.log(id, film);
 </script>
 
 <template>
